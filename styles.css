@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("https://blog.publicidade.uol.com.br/wp-content/uploads/2018/10/UOL-AD_LAB-CS-GO.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-box {
+width: 100%;
+ max-width: 600px;
+  padding: 25px 40px;
+
+  background: #02304d;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.login-box input {
+  background: #7b2cbf ;
+  color: white ;
+  border: 1px solid #5a189a ;
+}
+
+.login-box input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cadastro-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: ("https://blog.publicidade.uol.com.br/wp-content/uploads/2018/10/UOL-AD_LAB-CS-GO.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cadastro-box {
+  width: 80vw;
+  max-width: 900px;
+
+  background: #02304d;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.cadastro-box input,
+.cadastro-box select {
+  background: #7b2cbf;
+  color: white ;
+  border: 1px solid #5a189a;
+}
+
+.cadastro-box input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+body.feed-page {
+  background-image: url("https://emtodolugar.facha.edu.br/wp-content/uploads/2021/04/cs-go-wallpaper-hd-logo-2_hu7e9aa276d7f2c7d722eb3f6f162399c3_189916_1920x1080_resize_q75_box.jpg?w=1920&h=768&crop=1");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #e7e9ea;
+}
+
+.feed {
+  width: 80vw;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feed-header {
+  width: 80vw;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feed-header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  color: white;
+  resize: none;
+  font-size: 1.2rem;
+  min-height: 110px;
+  width: 100%;
+}
+
+button {
+  background: #1d9bf0;
+  border: none;
+  border-radius: 26px;
+  padding: 12px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tweet-text {
+  margin-left: 95px;
+  margin-top: 10px;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+.tweet-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-left: 95px;
+  max-width: 90%;
+  color: #71767b;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+  .feed,
+  .feed-header {
+    width: 90vw;
+  }
+
+  .login-box,
+  .cadastro-box {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .feed,
+  .feed-header {
+    width: 95vw;
+  }
+
+  .feed-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .feed-header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .tweet,
+  .tweet-box {
+    padding: 18px;
+  }
+
+  .tweet-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tweet-text {
+    margin-left: 0;
+    max-width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .tweet-actions {
+    padding-left: 0;
+    justify-content: space-around;
+    font-size: 1rem;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  textarea {
+    font-size: 1rem;
+    min-height: 90px;
+  }
+
+  .login-box,
+  .cadastro-box {
+    padding: 20px;
+    width: 95vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .login-box,
+  .cadastro-box {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .tweet-actions {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+}
